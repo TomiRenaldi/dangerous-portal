@@ -21,7 +21,7 @@ export default class Portal
     setMain()
     {
         this.main = {}
-        this.main.geometry = new THREE.PlaneGeometry(2, 2, 1, 1)
+        this.main.geometry = new THREE.PlaneGeometry(1, 1, 1, 1)
         this.main.material = new THREE.ShaderMaterial({
             uniforms: {
                 uTime: { value: 0 },
@@ -33,6 +33,7 @@ export default class Portal
             vertexShader: vertexShader,
             fragmentShader: fragmentShader
         })
+
         this.main.mesh = new THREE.Mesh(this.main.geometry, this.main.material)
         this.group.add(this.main.mesh)
     }

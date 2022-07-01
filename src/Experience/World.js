@@ -1,6 +1,8 @@
 import * as THREE from 'three'
 import Experience from './Experience.js'
 import Portal from './Portal.js'
+import Floor from './Floor.js'
+import Lights from './Lights.js'
 
 export default class World
 {
@@ -16,6 +18,8 @@ export default class World
             if(_group.name === 'base')
             {
                 this.setPortal()
+                this.setFloor()
+                this.setLights()
             }
         })
     }
@@ -23,6 +27,16 @@ export default class World
     setPortal()
     {
         this.portal = new Portal()
+    }
+
+    setFloor()
+    {
+        this.floor = new Floor()
+    }
+
+    setLights()
+    {
+        this.lights = new Lights()
     }
 
     resize()
