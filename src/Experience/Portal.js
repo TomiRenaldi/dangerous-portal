@@ -27,7 +27,8 @@ export default class Portal
                 uTime: { value: 0 },
                 uColor1: { value: new THREE.Color('#8c6700') },
                 uColor2: { value: new THREE.Color('#bf8d00') },
-                uColor3: { value: new THREE.Color('#d9c94e') }
+                uColor3: { value: new THREE.Color('#d9c94e') },
+                uColor4: { value: new THREE.Color('#ffee00') }
             },
             vertexShader: vertexShader,
             fragmentShader: fragmentShader
