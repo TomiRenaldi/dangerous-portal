@@ -31,6 +31,8 @@ export default class World
 
     update()
     {
+        if (this.portal)
+            this.portal.update()
     }
 
     destroy()

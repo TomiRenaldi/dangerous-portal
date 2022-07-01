@@ -10,6 +10,7 @@ export default class Portal
     {
         this.experience = new Experience()
         this.scene = this.experience.scene
+        this.time = this.experience.time
 
         this.group = new THREE.Group()
         this.scene.add(this.group)
@@ -23,6 +24,7 @@ export default class Portal
         this.main.geometry = new THREE.PlaneGeometry(2, 2, 1, 1)
         this.main.material = new THREE.ShaderMaterial({
             uniforms: {
+                uTime: { value: 0 },
                 uColor1: { value: new THREE.Color('#8c6700') },
                 uColor2: { value: new THREE.Color('#bf8d00') },
                 uColor3: { value: new THREE.Color('#d9c94e') }
@@ -32,5 +34,10 @@ export default class Portal
         })
         this.main.mesh = new THREE.Mesh(this.main.geometry, this.main.material)
         this.group.add(this.main.mesh)
+    }
+
+    update()
+    {
+        this.main.material.uniforms.uTime.value = this.time.elapsed
     }
 }
