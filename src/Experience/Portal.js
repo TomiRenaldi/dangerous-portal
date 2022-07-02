@@ -30,6 +30,8 @@ export default class Portal
                 uColor3: { value: new THREE.Color('#d9c94e') },
                 uColor4: { value: new THREE.Color('#ffee00') }
             },
+            
+            side: THREE.DoubleSide,
             vertexShader: vertexShader,
             fragmentShader: fragmentShader
         })

@@ -13,7 +13,7 @@ export default class Lights
 
     setPointLights()
     {
-        this.pointLights = new THREE.PointLight({ color: 0xffffff })
+        this.pointLights = new THREE.PointLight(0xa4a646, 1)
         this.pointLights.position.y = 1
         this.scene.add(this.pointLights)
     }
