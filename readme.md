@@ -1,5 +1,8 @@
 # Dangerous Portal
 
+- [Live](http://dream-room.vercel.app/)
+- [Github](https://github.com/TomiRenaldi/dangerous-portal)
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
