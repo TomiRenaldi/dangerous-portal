@@ -17,14 +17,17 @@ export default class Stone
     {
         this.stone = {}
         this.stone.model = this.resources.items.stoneModel.scene
-
-        this.stone.model.traverse((_child) => {
-            _child.castShadow = true
-            _child.receiveShadow = true
-        })
-
         this.stone.model.scale.set(0.02, 0.02, 0.02)
         this.stone.model.position.y = -0.5
+
+        this.stone.model.traverse((_child) => {
+            if (_child instanceof THREE.Mesh)
+            {
+                _child.castShadow = true
+                _child.receiveShadow = true
+            }
+        })
+
         this.scene.add(this.stone.model)
     }
 }
