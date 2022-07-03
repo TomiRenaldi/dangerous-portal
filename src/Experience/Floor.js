@@ -16,8 +16,11 @@ export default class floor
         this.floor = {}
         this.floor.geometry = new THREE.PlaneGeometry(10, 10, 1, 1)
         this.floor.geometry.rotateX(- Math.PI * 0.5)
+
         this.floor.material = new THREE.MeshStandardMaterial({ color: '#5d5e1e' })
+        
         this.floor.mesh = new THREE.Mesh(this.floor.geometry, this.floor.material)
+        this.floor.mesh.receiveShadow = true
         this.floor.mesh.position.y = - 0.5
         this.scene.add(this.floor.mesh)
     }

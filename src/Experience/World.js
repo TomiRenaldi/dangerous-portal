@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import Experience from './Experience.js'
 import Portal from './Portal.js'
 import Floor from './Floor.js'
+import Stone from './Stone.js'
 import Lights from './Lights.js'
 
 export default class World
@@ -19,6 +20,7 @@ export default class World
             {
                 this.setPortal()
                 this.setFloor()
+                this.setStone()
                 this.setLights()
             }
         })
@@ -32,6 +34,11 @@ export default class World
     setFloor()
     {
         this.floor = new Floor()
+    }
+
+    setStone()
+    {
+        this.stone = new Stone()
     }
 
     setLights()

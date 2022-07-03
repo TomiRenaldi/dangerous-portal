@@ -37,6 +37,7 @@ export default class Portal
         })
 
         this.main.mesh = new THREE.Mesh(this.main.geometry, this.main.material)
+        this.main.mesh.position.y = -0.1
         this.group.add(this.main.mesh)
     }
 

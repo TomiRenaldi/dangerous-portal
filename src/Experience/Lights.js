@@ -14,7 +14,10 @@ export default class Lights
     setPointLights()
     {
         this.pointLights = new THREE.PointLight(0xa4a646, 1)
-        this.pointLights.position.y = 1
+        this.pointLights.position.y = -0.25
+        this.pointLights.castShadow = true
+        this.pointLights.shadow.camera.near = 0.1
+        this.pointLights.shadow.camera.far = 100
         this.scene.add(this.pointLights)
     }
 }

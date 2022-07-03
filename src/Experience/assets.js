@@ -4,7 +4,7 @@ export default [
         data: {},
         items:
         [
-            { name: 'broccoliTexture', source: '/assets/broccoli.png', type: 'texture' },
+            { name: 'stoneModel', source: '/assets/stoneModel.glb' },
         ]
     }
 ]
