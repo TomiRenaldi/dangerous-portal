@@ -1,6 +1,6 @@
 # Dangerous Portal
 
-- [Live](http://dream-room.vercel.app/)
+- [Live](http://dangerous-portal.vercel.app/)
 - [Github](https://github.com/TomiRenaldi/dangerous-portal)
 
 ## Setup
