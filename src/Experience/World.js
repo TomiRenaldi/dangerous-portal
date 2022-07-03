@@ -54,6 +54,9 @@ export default class World
     {
         if (this.portal)
             this.portal.update()
+        
+        if (this.lights)
+            this.lights.update()
     }
 
     destroy()

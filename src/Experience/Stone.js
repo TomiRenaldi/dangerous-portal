@@ -24,7 +24,6 @@ export default class Stone
             if (_child instanceof THREE.Mesh)
             {
                 _child.castShadow = true
-                _child.receiveShadow = true
             }
         })
 

@@ -1,3 +1,5 @@
+// Bundle needs updating
+
 const path = require('path')
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.common.js')

@@ -21,7 +21,11 @@ export default class Portal
     setMain()
     {
         this.main = {}
+
+        // Geometry
         this.main.geometry = new THREE.PlaneGeometry(1, 1, 1, 1)
+
+        // Material
         this.main.material = new THREE.ShaderMaterial({
             uniforms: {
                 uTime: { value: 0 },
@@ -36,6 +40,7 @@ export default class Portal
             fragmentShader: fragmentShader
         })
 
+        // Mesh
         this.main.mesh = new THREE.Mesh(this.main.geometry, this.main.material)
         this.main.mesh.position.y = -0.1
         this.group.add(this.main.mesh)

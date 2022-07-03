@@ -44,9 +44,11 @@ export default class Floor
     setFloor()
     {
         this.floor = {}
+
         this.floor.normalScale = 1
 
-        this.floor.geometry = new THREE.PlaneGeometry(10, 10, 100, 100)
+        // Geometry
+        this.floor.geometry = new THREE.PlaneGeometry(10, 10, 300, 300)
         this.floor.geometry.rotateX(- Math.PI * 0.5)
         this.floor.geometry.attributes.uv2 = this.floor.geometry.attributes.uv
 
@@ -76,6 +78,7 @@ export default class Floor
             )
         }
         
+        // Mesh
         this.floor.mesh = new THREE.Mesh(this.floor.geometry, this.floor.material)
         this.floor.mesh.receiveShadow = true
         this.floor.mesh.position.y = - 0.5

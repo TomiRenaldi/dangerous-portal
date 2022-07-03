@@ -1,3 +1,5 @@
+// Bundle needs updating
+
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.common.js')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
