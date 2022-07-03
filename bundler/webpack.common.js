@@ -1,4 +1,4 @@
-// Bundle needs updating
+// Bundle needs updating.
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
